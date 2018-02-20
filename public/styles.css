@@ -1,3 +1,18 @@
+@font-face {
+    font-family: test1;
+    src: url(fonts/LQ.ttf);
+}
+
+@font-face {
+    font-family: test2;
+    src: url(fonts/Respective.ttf);
+}
+
+@font-face {
+    font-family: test3;
+    src: url(fonts/Precious.ttf);
+}
+
 body {
   background-color: #800000;
 }
@@ -9,4 +24,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.header-text {
+  font-size: 5rem;
+  font-family: test1;
+}
+.header-text2 {
+  font-size: 5rem;
+  font-family: test2;
+}
+.header-text3 {
+  font-size: 5rem;
+  font-family: test3;
 }
