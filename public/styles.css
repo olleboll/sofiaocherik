@@ -1,0 +1,12 @@
+body {
+  background-color: #800000;
+}
+
+.header-container {
+  background-color: #FCFBE3;
+  margin-top: 200px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
