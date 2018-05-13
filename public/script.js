@@ -1,6 +1,8 @@
 window.onload = function(){
   window.addEventListener('scroll', pinnNames)
   $('#top').hide()
+  var contents = document.getElementById('0')
+  contents.className = 'content active-content'
 }
 
 function pinnNames(){
@@ -38,4 +40,24 @@ function fade(element) {
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
     }, 50);
+}
+
+
+function itemClick(e) {
+  console.log(e)
+  var allButtons = document.querySelectorAll('.nav button')
+  for (var i = 0; i < allButtons.length; i++) {
+    var btn = allButtons[i]
+    btn.className = 'btn btn-item'
+  }
+  allButtons[e].className = 'btn btn-item-active'
+  console.log(allButtons)
+  var allContent = document.querySelectorAll('.content')
+  for (var i = 0; i < allContent.length; i++) {
+    var c = allContent[i]
+    c.className = 'content'
+  }
+  var active = document.getElementById(e)
+  active.className = 'content active-content'
+  return false
 }
