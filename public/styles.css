@@ -1,6 +1,8 @@
 @font-face {
-    font-family: wedding;
-    src: url(fonts/VIVALDII.ttf);
+  font-family: 'wedding';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/VIVALDII.ttf) format('truetype');
 }
 
 body {
