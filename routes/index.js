@@ -8,24 +8,24 @@ moment.locale('sv')
 
 const db = require('../db')
 
-router.post('/music', async (req, res, next) => {
+router.post('/music', (req, res, next) => {
 
   console.log("posting music")
   console.log(req.body)
-  const { music, err } = await createPost(req.body)
-  if (err) {
+  const { music, err } = createPost(req.body).then((data) => {
+    return res.json({
+      status: "ok",
+      data:music
+    })
+  }).catch(err => {
     return res.json({
       status: "not ok",
       err
     })
-  }
-  return res.json({
-    status: "ok",
-    music
   })
 })
 
-const createPost = async (music) => {
+const createPost = (music) => {
   if (music.artist === "" || music.song === "") {
     return {music: null, err: "Var noga med att vi får både artist och låt :)"}
   }
@@ -46,13 +46,7 @@ const createPost = async (music) => {
   }
   console.log(item)
   
-  return db.put(item).promise().then( (data) => {
-    console.log(data)
-    return { music: data, err:null}
-  }).catch(err => {
-    console.error(err)
-    return { music: null, err}
-  })
+  return db.put(item).promise()
 }
 
 module.exports = router;
