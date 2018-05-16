@@ -18,6 +18,8 @@
     </div>
   </div>
   <section>
+    <div class="side-img-left">
+    </div>
     <div class="container header-container">
       <div class="row">
         <div class="col-sm-12">
@@ -26,6 +28,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="side-img-right">
     </div>
   </section>
 
@@ -70,7 +74,22 @@
             </p>
           </div>
           <div id="1" class="col-sm-4 offset-sm-4 content">
-            <p class="content-text">Här ska man kunna skriva in fösölag på musik typ..</p>
+            <form class="music-form">
+              <div class="form-group">
+                <label for="artist">Artist</label>
+                <input type="text" class="form-control" id="artist">
+              </div>
+              <div class="form-group">
+                <label for="song">Låt</label>
+                <input type="text" class="form-control" id="song">
+              </div>
+              <div class="form-group">
+                <label for="from">Vem är du?</label>
+                <input class="form-control" id="from">
+                <small class="form-text text-muted">Inte obligatoriskt :)</small>
+              </div>
+              <button onclick="postMusic(); return false;" class="btn btn-primary">Skicka</button>
+            </form>
           </div>
           <div id="2" class="col-sm-4 offset-sm-4 content">
             <p class="content-text">Här är lite anna info</p>

@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 90vw !important;
+  max-width: 75vw !important;
 }
 
 .header-container {
@@ -23,7 +23,6 @@ body {
   justify-content: center;
   border-radius: 5px 5px 0 0;
   border: 60px solid #580b1c;
-
 }
 
 .middle-container {
@@ -49,8 +48,9 @@ body {
   height: 50px;
   width: 100vw;
   background-color: #FCFBE3;
-  border: 50px solid #FCFBE3;
+  //border: 50px solid #FCFBE3;
   z-index: 10;
+  //background-image: url("/images/border_down.png");
 }
 
 
@@ -112,4 +112,41 @@ body {
   height: 20px;
   width: 100%;
   background-color: #580b1c;
+}
+
+.music-form {
+  color: #580b1c;
+}
+
+.side-img-left {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 90vw;
+  padding: 0 15px;
+  margin: 0 0 10px 0;
+  float: left;
+  background: url("/images/border.png") 0 0 repeat;
+
+}
+
+.side-img-right {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 90vw;
+  padding: 0 15px;
+  margin: 0 0 10px 0;
+  float: left;
+  background: url("/images/border.png") 0 0 repeat;
+}
+
+.image {
+  position: relative;
+  background-image: url("/images/border.png");
+  overflow: hidden;
 }
