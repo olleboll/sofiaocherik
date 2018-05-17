@@ -5,8 +5,17 @@
   src: url(fonts/vivaldi.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'wedding2';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/nirmalas.ttf) format('truetype');
+}
+
 body {
   background-color: #FCFBE3;
+  font-family: wedding2;
+
 }
 
 .container {
