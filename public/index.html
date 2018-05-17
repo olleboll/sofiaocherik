@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--
+  Oh nej.. jag känner mig naken...
+  
+  
+  Glöm inte att det är fri bar frästen!
+  -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
@@ -17,14 +23,18 @@
     <div class="top-border">
     </div>
   </div>
+  
+  
   <section>
     <div class="side-img-left">
     </div>
     <div class="container header-container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="header-text">
-            <p>Sofia Nilsson<br>&<br>Erik Wahlström</p>
+      <div class="header-img">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="header-text">
+              <p>Sofia Nilsson<br>&<br>Erik Wahlström</p>
+            </div>
           </div>
         </div>
       </div>
@@ -32,12 +42,10 @@
     <div class="side-img-right">
     </div>
   </section>
+  
 
   <section>
     <div class="container middle-container">
-      <!-- here goes tabs
-      ***
-      -->
       <div class="row">
         <div class="col-sm-4 offset-sm-4 nav">
           <div class="item">
@@ -56,9 +64,9 @@
         </div>
       </div>
       <div class="row ">
-        <div class="col-sm-4 offset-sm-4">
-          <div id="0" class=" content">
-            <p class="content-text">Lördagen den 13 oktober 2018 kl 16:30<br><br>
+        <div class="col-sm-6 offset-sm-3">
+          <div id="0" class="content">
+            <p>Lördagen den 13 oktober 2018 kl 16:30<br><br>
    
             Vigselakt samt efterföljande<br>
             middag och festligheter äger rum i<br>
@@ -73,17 +81,19 @@
             För mer information: sofiaocherik.se
             </p>
           </div>
-          <div id="1" class="col-sm-4 offset-sm-4 content">
+        </div>
+        <div class="col-sm-6 offset-sm-3">
+          <div id="1" class="content">
             <form class="music-form">
-              <div class="form-group">
+              <div class="form-group music-input">
                 <label for="artist">Artist</label>
                 <input type="text" class="form-control" id="artist">
               </div>
-              <div class="form-group">
+              <div class="form-group music-input">
                 <label for="song">Låt</label>
                 <input type="text" class="form-control" id="song">
               </div>
-              <div class="form-group">
+              <div class="form-group music-input">
                 <label for="from">Vem är du?</label>
                 <input class="form-control" id="from">
                 <small class="form-text text-muted">Inte obligatoriskt :)</small>
@@ -91,7 +101,9 @@
               <button onclick="postMusic(); return false;" class="btn btn-primary">Skicka</button>
             </form>
           </div>
-          <div id="2" class="col-sm-4 offset-sm-4 content">
+        </div>
+        <div class="col-sm-6 offset-sm-3">
+          <div id="2" class="content">
             <p class="content-text">Här är lite anna info</p>
           </div>
         </div>

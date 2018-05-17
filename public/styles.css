@@ -23,7 +23,7 @@ body {
 }
 
 .header-container {
-  background-image: url("images/img.jpg");
+  
   color: #FCFBE3;
   margin-top: 50px;
   height: 600px;
@@ -31,7 +31,16 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px 5px 0 0;
-  border: 60px solid #580b1c;
+  border-bottom: 60px solid #580b1c;
+  border-top: 60px solid #580b1c;
+  background-color: #580b1c;
+}
+
+.header-img {
+  background-image: url("images/img.jpg");
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 100%;
 }
 
 .middle-container {
@@ -40,7 +49,7 @@ body {
   height: 600px;
   width: 100%;
   border-radius: 0;
-  border: 60px solid #580b1c;
+  //border: 60px solid #580b1c;
 }
 
 .header-text {
@@ -49,17 +58,15 @@ body {
   text-align: center;
 }
 
-
 .top {
   display: block;
   position: fixed;
   top:0;
+  left: 12.5vw;
   height: 50px;
-  width: 100vw;
+  width: 75vw;
   background-color: #FCFBE3;
-  //border: 50px solid #FCFBE3;
   z-index: 10;
-  //background-image: url("/images/border_down.png");
 }
 
 
@@ -79,16 +86,13 @@ body {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  max-width: 400px;
   background-color: #FCFBE3;
+  color: #580b1c;
+  border-image: url("/images/border.png") 30% round;
 }
 
 .active-content {
   display:block
-}
-
-.content-text {
-  color: #580b1c;
 }
 
 .nav {
@@ -127,8 +131,14 @@ body {
   color: #580b1c;
 }
 
+.music-input {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
 .side-img-left {
-  z-index: 5;
+  z-index: 50;
   position: absolute;
   top: 0;
   left: 0;
@@ -136,13 +146,13 @@ body {
   height: 90vw;
   padding: 0 15px;
   margin: 0 0 10px 0;
-  float: left;
+  color: #580b1c;
   background: url("/images/border.png") 0 0 repeat;
 
 }
 
 .side-img-right {
-  z-index: 5;
+  z-index: 50;
   position: absolute;
   top: 0;
   right: 0;
@@ -150,7 +160,6 @@ body {
   height: 90vw;
   padding: 0 15px;
   margin: 0 0 10px 0;
-  float: left;
   background: url("/images/border.png") 0 0 repeat;
 }
 
