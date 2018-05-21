@@ -1,21 +1,19 @@
 @font-face {
   font-family: 'wedding';
   font-style: normal;
-  font-weight: 400;
+  //font-weight: 400;
   src: url(fonts/vivaldi.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'wedding2';
   font-style: normal;
-  font-weight: 400;
-  src: url(fonts/nirmalas.ttf) format('truetype');
+  src: url(fonts/nirmalas.ttf);
 }
 
 body {
   background-color: #FCFBE3;
   font-family: wedding2;
-
 }
 
 .container {
@@ -23,38 +21,46 @@ body {
 }
 
 .header-container {
-  
-  color: #FCFBE3;
-  margin-top: 50px;
-  height: 600px;
+  max-width: 100vw !important;
+  color: #580b1c;
+  text-shadow: 2px 2px #FCFBE3;
+  //margin-top: 50px;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px 5px 0 0;
-  border-bottom: 60px solid #580b1c;
-  border-top: 60px solid #580b1c;
+  //border-bottom: 60px solid #580b1c;
+  //border-top: 60px solid #580b1c;
   background-color: #580b1c;
 }
 
 .header-img {
-  background-image: url("images/img.jpg");
-  background-repeat: no-repeat;
-  width: 90%;
+  background-image: url("images/bg.jpeg");
+  //background-repeat: no-repeat;
+  width: 100%;
   height: 100%;
 }
 
 .middle-container {
   background-color: #580b1c;
   color: #FCFBE3;
-  height: 600px;
+  height: 100%;
   width: 100%;
   border-radius: 0;
-  //border: 60px solid #580b1c;
+  margin-top: 30px;
+  border-top: 60px solid #580b1c;
 }
 
 .header-text {
   font-size: 5rem;
   font-family: wedding;
+  text-align: center;
+  margin-top: 125px;
+}
+
+.head-text {
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -67,6 +73,7 @@ body {
   width: 75vw;
   background-color: #FCFBE3;
   z-index: 10;
+  border-radius: 0 0 10px 10px;
 }
 
 
@@ -83,12 +90,14 @@ body {
 
 .content {
   display: none;
-  border-radius: 10px;
+  //border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background-color: #FCFBE3;
   color: #580b1c;
   border-image: url("/images/border.png") 30% round;
+  margin-bottom: 50px;
 }
 
 .active-content {
@@ -100,7 +109,8 @@ body {
   width: 100%;
   height: 75px;
   color: #580b1c;
-  border-radius: 35px;
+  //border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   text-align: center;
 }
 
@@ -140,10 +150,10 @@ body {
 .side-img-left {
   z-index: 50;
   position: absolute;
-  top: 0;
+  top: 600px;
   left: 0;
   width: 250px;
-  height: 90vw;
+  height: 80%;
   padding: 0 15px;
   margin: 0 0 10px 0;
   color: #580b1c;
@@ -154,10 +164,10 @@ body {
 .side-img-right {
   z-index: 50;
   position: absolute;
-  top: 0;
+  top: 600px;
   right: 0;
   width: 250px;
-  height: 90vw;
+  height: 80%;
   padding: 0 15px;
   margin: 0 0 10px 0;
   background: url("/images/border.png") 0 0 repeat;

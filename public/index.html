@@ -12,7 +12,7 @@
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="script.js" ></script>
 </head>
 <body>
@@ -26,9 +26,9 @@
   
   
   <section>
-    <div class="side-img-left">
-    </div>
-    <div class="container header-container">
+    
+    
+    <div class="header-container">
       <div class="header-img">
         <div class="row">
           <div class="col-sm-12">
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="side-img-right">
+    <div class="side-imdg-right">
     </div>
   </section>
   
@@ -47,15 +47,14 @@
   <section>
     <div class="container middle-container">
       <div class="row">
-        <div class="col-sm-4 offset-sm-4 nav">
-          <div class="item">
-            <button onclick="itemClick(0);" class="btn btn-item-active">Information</button>
-          </div>
-          <div class="item">
-            <button onclick="itemClick(1);"  class="btn btn-item">Musik</button>
-          </div>
-          <div class="item">
-            <button onclick="itemClick(2);"  class="btn btn-item">Mer</button>
+        <div class="col-sm-6 offset-sm-3">
+          <div class="nav">
+            <div class="item">
+              <button onclick="itemClick(0);" class="btn btn-item-active">Information</button>
+            </div>
+            <div class="item">
+              <button onclick="itemClick(1);"  class="btn btn-item">Önskemusik</button>
+            </div>
           </div>
         </div>
       </div>
@@ -66,19 +65,26 @@
       <div class="row ">
         <div class="col-sm-6 offset-sm-3">
           <div id="0" class="content">
-            <p>Lördagen den 13 oktober 2018 kl 16:30<br><br>
-   
-            Vigselakt samt efterföljande<br>
-            middag och festligheter äger rum i<br>
-            Läkarförbundets festvåning<br>
-            på Villagatan 5 i Stockholm<br>
-            Klädsel: Mörk kostym<br><br>
-            Svar senast: 1 september till<br>
-            sofiaocherikwahlstrom@gmail.com<br>
-            Erik 070-485 20 57<br>
-            Sofia 072-350 65 32<br><br>
-             
-            För mer information: sofiaocherik.se
+            <p class="head-text">Välkommen till vårt bröllop</p><br>
+            <p>
+              Vi gifter oss lördagen den 13 oktober i Stockholm.
+              Vigsel och efterföljande fest äger rum på <a href="https://www.google.se/maps/place/Villagatan+5,+114+32+Stockholm/@59.3421973,18.0707568,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d42358e3fc1:0xac8de9961f2130b1!8m2!3d59.3421973!4d18.0729455" target="_blank">Villagatan 5</a> i Läkarförbundets festvåning, med start 16:30. Kom i god tid!<br><br><br>
+              
+              Klädsel - Mörk kostym<br><br>
+
+              Senast svar - Senast den 1 september vill vi veta om vi har nöjet att få dela vår bröllopsdag med er. Meddela även specialkost och eventuella allergier till osa@sofiaocherik.se.<br><br>
+
+              Toastmaster - Ken Lindeberg Lindvet mailadr: toastmaster@sofiaocherik.se<br><br>
+
+              Önskemusik - Vilken låt skulle du vilja höra under kvällen? Klicka här<br><br>
+
+              Boende - Det finns många bra boendealternativ i närheten av festlokalen.<br><br>
+
+              Barn - Vi önskar fira vår bröllopsdag utan barn.<br><br>
+
+              Önskelista - Vi är glada om ni kommer och delar vår dag. Vill ni ge oss något välkomnar vi gärna ett bidrag till vår bröllopsresa, via Ticket.<br><br>
+
+              Foto - Vi skulle bli glada om ni delar med er av foton som ni tar under festligheterna. Mer info kommer.<br><br>
             </p>
           </div>
         </div>
@@ -94,9 +100,8 @@
                 <input type="text" class="form-control" id="song">
               </div>
               <div class="form-group music-input">
-                <label for="from">Vem är du?</label>
+                <label for="from">Vem är du?<small class="text-muted"> Inte obligatoriskt :)</small></label>
                 <input class="form-control" id="from">
-                <small class="form-text text-muted">Inte obligatoriskt :)</small>
               </div>
               <button onclick="postMusic(); return false;" class="btn btn-primary">Skicka</button>
             </form>

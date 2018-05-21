@@ -2,11 +2,11 @@
 
 const express = require('express');
 const router = express.Router();
-const uuid = require('uuid/v4')
-const moment = require('moment')
-moment.locale('sv')
+const uuid = require('uuid/v4');
+const moment = require('moment');
+moment.locale('sv');
 
-const db = require('../db')
+const db = require('../db');
 
 router.post('/music', (req, res, next) => {
 
@@ -23,7 +23,7 @@ router.post('/music', (req, res, next) => {
       err
     })
   })
-})
+});
 
 const createPost = (music) => {
   if (music.artist === "" || music.song === "") {
@@ -47,6 +47,6 @@ const createPost = (music) => {
   console.log(item)
   
   return db.put(item).promise()
-}
+};
 
 module.exports = router;
