@@ -24,10 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
-  @media only screen and (max-width : 400px) {
-    background-size: contain;
-  }
 }
 
 .container {
@@ -35,22 +31,25 @@ body {
 }
 
 .header-container {
-  color: #580b1c;
+  ////color: #580b1c;
+  color: rgba(32, 4, 16, 1);
+  color: rgba(32, 4, 16, 1);
   text-shadow: 2px 2px #FCFBE3;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 400px;
-  @media only screen and (max-width : 400px) {
-    margin-bottom: 900px;
-  }
 }
 
 .middle-container {
   color: #FCFBE3;
+  color: rgba(32, 4, 16, 1);
   border-radius: 0;
-  margin-top: 300px;
   margin-bottom: 300px;
+}
+
+.middle-seperator {
+  height: 600px;
+  
 }
 
 .header-text {
@@ -72,7 +71,8 @@ body {
   left: 12.5vw;
   height: 50px;
   width: 75vw;
-  background-color: rgba(255, 251, 227, 0.8);
+  background-color: rgba(247, 231, 224, 0.8);
+  //background-color: rgba(255, 251, 227, 0.8);
   z-index: 10;
   border-radius: 0 0 10px 10px;
 }
@@ -80,7 +80,8 @@ body {
 .top-text {
   font-size: 2rem;
   font-family: wedding;
-  color: #580b1c;
+  //color: #580b1c;
+  color: rgba(32, 4, 16, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,12 +92,15 @@ body {
   display: none;
   padding: 15px;
   text-align: left;
-  background-color: rgba(255, 251, 227, 0.8);
-  color: #580b1c;
-  border: 5px;
-  border-color: #580b1c;
-  border-style: groove;
-  //border-radius: 0 0 10px 10px;
+  background-color: rgba(247, 231, 224, 0.8);
+  //background-color: rgba(255, 251, 227, 0.8);
+  //color: #580b1c;
+  color: rgba(32, 4, 16, 1);
+  //border: 5px;
+  //border-//color: rgba(32, 4, 16, 1);
+  color: rgba(32, 4, 16, 1);
+  //border-style: groove;
+  border-radius: 5px;
   margin-bottom: 50px;
 }
 
@@ -108,20 +112,25 @@ body {
   //background-color: #FCFBE3;
   width: 100%;
   height: 75px;
-  color: #580b1c;
+  //color: #580b1c;
+  color: rgba(32, 4, 16, 1);
   border-radius: 10px 10px 0 0;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .btn-item {
-  background-color: rgba(88, 11, 28, 0.8);
-  color: #FCFBE3;
+  background-color: rgba(32, 4, 16, 0.8);
+  //background-color: rgba(88, 11, 28, 0.8);
+  // color: #FCFBE3;
+  color: rgba(247, 231, 224, 0.8);
 }
 
 .btn-item-active {
-  background-color: rgba(255, 251, 227, 0.8);
-  color: #580b1c;
+  background-color: rgba(247, 231, 224, 0.8);
+  //background-color: rgba(255, 251, 227, 0.8);
+  //color: #580b1c;
+  color: rgba(32, 4, 16, 1);
 }
 
 .item {
@@ -132,7 +141,8 @@ body {
 }
 
 .music-form {
-  color: #580b1c;
+  //color: #580b1c;
+  color: rgba(32, 4, 16, 1);
 }
 
 .music-input {
