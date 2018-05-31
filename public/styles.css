@@ -15,17 +15,29 @@
   --primary: rgba(247, 231, 224, 1);
   --secondary: rgba(77, 4, 61, 1);
   --primary-opac: rgba(247, 231, 224, 0.8);
-  --secondary-opac: rgba(37, 4, 21, 0.6);
+  --secondary-opac: rgba(77, 4, 61, 0.6);
   
   --primary-light: rgba(255, 251, 227, 1);
   --secondary-light: rgba(37, 4, 21, 1);
   --primary-light-opac: rgba(255, 251, 227, 0.8);
   --secondary-light-opac: rgba(88, 11, 28, 0.8);
+  
+  --link-color: rgb(42, 136, 42);
+  --link-hover: rgb(102, 86, 42);
 }
 
 body {
   background-color: var(--primary);
   font-family: wedding2;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 .background {
@@ -138,11 +150,33 @@ body {
 
 .music-form {
   //color: #580b1c;
-  color: var(--secondary)
+  color: var(--secondary);
+  text-align: center;
+  
+}
+
+.btn-music {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.item:focus {
+  outline: none;
 }
 
 .music-input {
   text-align: center;
   margin: 0 auto;
+  margin-top: 10px;
   max-width: 300px;
+}
+
+.music-input, label {
+  text-align: left;
+}
+
+.text-muted {
+  color: var(--secondary-opac) !important;
 }
