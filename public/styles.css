@@ -13,12 +13,12 @@
 
 :root {
   --primary: rgba(247, 231, 224, 1);
-  --secondary: rgba(32, 4, 16, 1);
+  --secondary: rgba(77, 4, 61, 1);
   --primary-opac: rgba(247, 231, 224, 0.8);
-  --secondary-opac: rgba(32, 4, 16, 0.6);
+  --secondary-opac: rgba(37, 4, 21, 0.6);
   
   --primary-light: rgba(255, 251, 227, 1);
-  --secondary-light: rgba(88, 11, 28, 1);
+  --secondary-light: rgba(37, 4, 21, 1);
   --primary-light-opac: rgba(255, 251, 227, 0.8);
   --secondary-light-opac: rgba(88, 11, 28, 0.8);
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .header-container {
-  color: var(--secondary-light);
+  color: var(--secondary);
   text-shadow: 2px 2px var(--primary);
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@ body {
 .top-text {
   font-size: 2rem;
   font-family: wedding;
-  color: var(--secondary-light);
+  color: var(--secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +100,7 @@ body {
   padding: 15px;
   text-align: left;
   background-color: var(--primary-opac);
-  color: var(--secondary-light);
+  color: var(--secondary);
   border-radius: 5px;
   margin-bottom: 50px;
 }
@@ -112,20 +112,21 @@ body {
 .nav {
   width: 100%;
   height: 75px;
-  color: var(--secondary-light)
+  color: var(--secondary)
   border-radius: 10px 10px 0 0;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .btn-item {
-  background-color: var(--secondary-light);
+  background-color: var(--secondary);
   color: var(--primary)
 }
 
 .btn-item-active {
-  background-color: var(--primary);
-  color: var(--secondary-opac);
+  background-color: var(--primary-opac);
+  color: var(--secondary);
+  
 }
 
 .item {
