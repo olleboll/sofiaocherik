@@ -32,12 +32,12 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--secondary);
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--link-hover);
+  color: var(--primary);
 }
 
 .background {
@@ -83,6 +83,7 @@ a:hover {
 .head-text {
   font-size: 1.2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .top {
