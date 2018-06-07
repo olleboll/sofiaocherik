@@ -16,6 +16,14 @@
   <script src="script.js" ></script>
 </head>
 <body>
+  <!--[if IE]>
+    <script>
+      alert('Sidan kanske inte är så fin som den ska vara. Det är för att du använder Internet Explorer.')
+    </script>
+  <![endif]-->
+  <![if !IE]>
+  <![endif]>
+  
   <div id="top" class="top" >
     <div id="toptext" class="top-text">
       <p>Sofia Nilsson & Erik Wahlström</p>
@@ -77,7 +85,7 @@
 
               <b>Toastmaster</b> - Ken Lindeberg Lindvet toastmaster@sofiaocherik.se<br><br>
 
-              <b>Önskemusik</b> - Vilken låt skulle du vilja höra under kvällen? Klicka här<br><br>
+              <b>Önskemusik</b> - Vilken låt skulle du vilja höra under kvällen? <a href="#" onclick="itemClick(1); return false;">Klicka här</a><br><br>
 
               <b>Boende</b> - Det finns många bra boendealternativ i närheten av festlokalen.<br><br>
 

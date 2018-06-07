@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'wedding2';
   font-style: normal;
-  src: url(fonts/nirmalas.ttf);
+  src: url(fonts/nirmalas.ttf) format('truetype');
 }
 
 :root {
@@ -28,7 +28,7 @@
 
 body {
   background-color: var(--primary);
-  font-family: wedding2;
+  font-family: wedding2, sans-serif, Arial;
 }
 
 a {
